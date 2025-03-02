@@ -98,4 +98,7 @@ section{
     header{
         width: 300px;
     }
+    header p span{
+        display: none;
+    }
 }
