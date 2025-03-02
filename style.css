@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    height: 100vh;
+    min-height: 650px;
+    min-width: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(212, 6%, 44%);
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    max-width: 1000px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-bottom: 45px;
+}
+header h2{
+    font-weight: 200;
+    margin-bottom: 3px;
+    font-size: 25px;
+}
+header h3{
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.box{
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: right;
+    padding: 30px;
+    height: fit-content;
+}
+.box-text{
+    text-align: left;
+    padding:0 10px 30px 0;
+}
+.box-text h4{
+    font-weight: 600;
+    color: black;
+    font-size: 15px;
+}
+.box1{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box2{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-bottom: 15px;
+}
+.box3{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box4{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.box1 img,.box2 img,.box3 img,.box4 img{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width:480px){
+    body{
+        min-width: 350px;
+        font-weight: 400;
+        min-height: 1100px;
+    }
+    .container{
+        min-width: unset;
+        width:300px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    header{
+        width: 300px;
+    }
+}
